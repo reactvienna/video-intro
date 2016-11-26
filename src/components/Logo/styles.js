@@ -20,7 +20,7 @@ const ellipsisEnter1 = keyframes`
     transform: scale(.66);
   }
 
-  90%, to {
+  80%, to {
     stroke-dashoffset: 0;
   }
 `;
@@ -37,13 +37,13 @@ export const Ellipsis1 = styled(Ellipsis)`
   animation: ${ellipsisEnter1} 4s forwards;
 `;
 const ellipsisEnter2 = keyframes`
-  from, 5% {
+  from, 10% {
     opacity: 0;
     stroke-width: 0;
     transform: scale(.66);
   }
 
-  95%, to {
+  90%, to {
     stroke-dashoffset: 0;
   }
 `;
@@ -53,7 +53,7 @@ export const Ellipsis2 = styled(Ellipsis)`
 `;
 
 const ellipsisEnter3 = keyframes`
-  from, 10% {
+  from, 20% {
     opacity: 0;
     stroke-width: 0;
     transform: scale(.66);

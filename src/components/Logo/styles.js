@@ -13,14 +13,8 @@ export const Blazon = styled.path`
   transform-origin: center;
 `;
 
-const ellipsisEnter1 = keyframes`
-  from {
-    opacity: 0;
-    stroke-width: 0;
-    transform: scale(.66);
-  }
-
-  90%, to {
+const ellipsisEnter = keyframes`
+  to {
     stroke-dashoffset: 0;
   }
 `;
@@ -34,35 +28,13 @@ const Ellipsis = styled.path`
 `;
 
 export const Ellipsis1 = styled(Ellipsis)`
-  animation: ${ellipsisEnter1} 4s forwards;
-`;
-const ellipsisEnter2 = keyframes`
-  from, 5% {
-    opacity: 0;
-    stroke-width: 0;
-    transform: scale(.66);
-  }
-
-  95%, to {
-    stroke-dashoffset: 0;
-  }
+  animation: ${ellipsisEnter} 2.8s .4s forwards;
 `;
 
 export const Ellipsis2 = styled(Ellipsis)`
-  animation: ${ellipsisEnter2} 4s forwards;
+  animation: ${ellipsisEnter} 2.8s .8s forwards;
 `;
 
-const ellipsisEnter3 = keyframes`
-  from, 10% {
-    opacity: 0;
-    stroke-width: 0;
-    transform: scale(.66);
-  }
-
-  to {
-    stroke-dashoffset: 0;
-  }
-`;
 export const Ellipsis3 = styled(Ellipsis)`
-  animation: ${ellipsisEnter3} 4s forwards;
+  animation: ${ellipsisEnter} 2.8s 1.2s forwards;
 `;

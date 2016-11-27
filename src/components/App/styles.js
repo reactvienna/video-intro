@@ -1,4 +1,5 @@
 import styled, {keyframes} from 'styled-components';
+import constants from '../../constants';
 
 export const Wrapper = styled.div`
   align-items: center;
@@ -27,7 +28,7 @@ const redTextEnter = keyframes`
   }
 `;
 export const RedText = styled(Text)`
-  animation: ${redTextEnter} 4s forwards;
+  animation: ${redTextEnter} ${constants.animationDuration} ${constants.animationEasing} forwards;
   color: #ff6363;
 `;
 
@@ -39,6 +40,6 @@ const blueTextEnter = keyframes`
   }
 `;
 export const BlueText = styled(Text)`
-  animation: ${blueTextEnter} 4s forwards;
+  animation: ${blueTextEnter} ${constants.animationDuration} ${constants.animationEasing} forwards;
   color: #607096;
 `;

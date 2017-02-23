@@ -1,2 +1,2 @@
-# website
-Official React Vienna Group Website
+# React Vienna Video Intro
+React Vienna video introduction sequence using CSS animations

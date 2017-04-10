@@ -4405,7 +4405,14 @@ react-scripts@0.7.0:
   optionalDependencies:
     fsevents "1.0.14"
 
-react@^15.4.1:
+react-sound@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/react-sound/-/react-sound-0.5.2.tgz#8514a44b1500feefca85ef87670dc65e26ea0720"
+  dependencies:
+    react ">=0.13.3 <16.0.0"
+    soundmanager2 "^2.97.20150601-a"
+
+"react@>=0.13.3 <16.0.0", react@^15.4.1:
   version "15.4.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.4.1.tgz#498e918602677a3983cd0fd206dfe700389a0dd6"
   dependencies:
@@ -4801,6 +4808,10 @@ sort-keys@^1.0.0:
   resolved "https://registry.yarnpkg.com/sort-keys/-/sort-keys-1.1.2.tgz#441b6d4d346798f1b4e49e8920adfba0e543f9ad"
   dependencies:
     is-plain-obj "^1.0.0"
+
+soundmanager2@^2.97.20150601-a:
+  version "2.97.20150601"
+  resolved "https://registry.yarnpkg.com/soundmanager2/-/soundmanager2-2.97.20150601.tgz#673edacb9b52bbcfa57712c370b011f6983c6f36"
 
 source-list-map@^0.1.4, source-list-map@~0.1.0:
   version "0.1.6"

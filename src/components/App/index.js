@@ -1,8 +1,8 @@
 import React from 'react';
 import Sound from 'react-sound';
 import {Wrapper, Group, BlueText, RedText} from './styles';
-import constants from '../../constants';
 import Logo from '../Logo';
+import constants from '../../constants';
 
 const App = () => (
   <Wrapper>

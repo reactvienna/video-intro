@@ -1,7 +1,10 @@
+import {delay, duration, sound} from './config.json';
+
 const constants = {
-  animationDuration: '6.8s',
+  animationDuration: `${duration / 1000}s`,
   animationEasing: 'ease-in-out',
-  sound: 'sound_b.mp3',
+  delay,
+  sound: `sounds/${sound}.mp3`,
 };
 
 export default constants;

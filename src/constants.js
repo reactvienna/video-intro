@@ -1,6 +1,6 @@
-const constants = {
-  animationDuration: '1.75s',
-  animationEasing: 'ease-in-out',
-};
+import {delay, duration} from './config.json';
 
-export default constants;
+export * from './config.json';
+export const animationDelay = `${delay / 1000}s`;
+export const animationDuration = `${duration / 1000}s`;
+export const animationEasing = 'ease-in-out';

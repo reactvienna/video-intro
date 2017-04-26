@@ -1,5 +1,5 @@
 import styled, {keyframes} from 'styled-components';
-import constants from '../../constants';
+import {animationDelay, animationDuration, animationEasing} from '../../constants';
 
 const blazonEnter = keyframes`
   from, 50% {
@@ -8,7 +8,7 @@ const blazonEnter = keyframes`
   }
 `;
 export const Blazon = styled.path`
-  animation: ${blazonEnter} ${constants.animationDuration} ${constants.animationEasing} forwards;
+  animation: ${blazonEnter} ${animationDuration} ${animationEasing} ${animationDelay} forwards;
   fill: #ff6363;
   transform-origin: center;
 `;
@@ -34,7 +34,7 @@ const Ellipsis = styled.path`
 `;
 
 export const Ellipsis1 = styled(Ellipsis)`
-  animation: ${ellipsisEnter1} ${constants.animationDuration} ${constants.animationEasing} forwards;
+  animation: ${ellipsisEnter1} ${animationDuration} ${animationEasing} ${animationDelay} forwards;
 `;
 const ellipsisEnter2 = keyframes`
   from, 5% {
@@ -49,7 +49,7 @@ const ellipsisEnter2 = keyframes`
 `;
 
 export const Ellipsis2 = styled(Ellipsis)`
-  animation: ${ellipsisEnter2} ${constants.animationDuration} ${constants.animationEasing} forwards;
+  animation: ${ellipsisEnter2} ${animationDuration} ${animationEasing} ${animationDelay} forwards;
 `;
 
 const ellipsisEnter3 = keyframes`
@@ -64,5 +64,5 @@ const ellipsisEnter3 = keyframes`
   }
 `;
 export const Ellipsis3 = styled(Ellipsis)`
-  animation: ${ellipsisEnter3} ${constants.animationDuration} ${constants.animationEasing} forwards;
+  animation: ${ellipsisEnter3} ${animationDuration} ${animationEasing} ${animationDelay} forwards;
 `;

@@ -2,12 +2,13 @@ import React from 'react';
 import Sound from 'react-sound';
 import {Wrapper, Group, BlueText, RedText} from './styles';
 import Logo from '../Logo';
-import constants from '../../constants';
+import {sound} from '../../constants';
+import {getSoundPath} from '../../helpers';
 
-const App = () => (
+const App = ({match: {params: {id}}}) => console.log(id) || (
   <Wrapper>
     <Sound
-      url={constants.sound}
+      url={getSoundPath(id || sound)}
       playStatus={Sound.status.PLAYING}
     />
     <Group>

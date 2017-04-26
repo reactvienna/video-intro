@@ -1,6 +1,7 @@
 {
   "delay": 0,
   "duration": 4000,
+  "timingFn": "ease-in-out",
   "loop": false,
   "sound": "b"
 }
